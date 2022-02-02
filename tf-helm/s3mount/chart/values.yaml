@@ -1,0 +1,19 @@
+image:
+  repository: kuzishai/goofys
+  pullPolicy: IfNotPresent
+  # Overrides the image tag whose default is the chart appVersion.
+  tag: "0.1"
+
+imagePullSecrets: []
+nameOverride: ""
+fullnameOverride: ""
+
+serviceAccount:
+  # Specifies whether a service account should be created
+  create: false
+  name: ""
+
+bucketName: ""
+iamRoleARN: ""
+mountPath: /var/s3
+hostPath: /mnt/s3data
